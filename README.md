@@ -24,4 +24,4 @@ Here, you can find:
 To get started, you can clone this repository to your local machine:
 
 ```bash
-git clone 
+git clone https://github.com/anasalashqar/Orang_Academy_Tasks 
