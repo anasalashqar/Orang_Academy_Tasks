@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control Commands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2C3E50;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        ul {
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Version Control Commands</h1>
+
+    <h2># LISTING FILES AND DIRECTORIES</h2>
+    <h3>## Please Note that the <u style="color: red;">code/picture might not be the same and files/folders might change</u>, becuase I did the code twice, enjoy!</h3>
+    <h3>## INSTRUCTION</h3>
+    <p><strong>YOUR ANSWER SHOULD BE SCREENSHOT</strong><br>
+    Upload your work to GitHub repo you create and repo name should be "<code>version_controller_repo</code>"</p>
+
+    <h3>1. List all files and directories in the current directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ ls
+    '3D Objects'/
+    AppData/
+    'Application Data'@
+    Contacts/
+    Cookies@
+    Documents/
+    Downloads/
+    </pre>
+    <img src="./ls.png" style="height: 800px; width: 100%;"/>
+    <h3>2. List all files and directories, including hidden ones</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ ls -a
+    ./ 
+    ../ 
+    .vscode/
+    '3D Objects'/
+    AppData/
+    'Application Data'@
+    Contacts/
+    Cookies@
+    Documents/
+    </pre>
+    <img src="./ls -a.png" style="height: 800px; width: 100%;"/>
+    <h3>3. List files and directories with detailed information</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ ls -l
+    total 5013
+    drwxr-xr-x 1 anasa 197609       0 Jan 12 10:59 '3D Objects'/
+    drwxr-xr-x 1 anasa 197609       0 Jan 12 10:57  AppData/
+    lrwxrwxrwx 1 anasa 197609      30 Jan 12 10:57 'Application Data' -> /c/Users/anasa/AppData/Roaming/
+    </pre>
+    <img src="./ls -l.png" style="height: 800px; width: 100%;"/>
+    <h2># NAVIGATING DIRECTORIES</h2>
+
+    <h3>4. Print the current working directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ pwd
+    /c/Users/anasa
+    </pre>
+    <img src="./pwd.png" style="height: 800px; width: 100%;"/>
+    <h3>5. Change to a different directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ cd version_controller_repo/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/version_controller_repo
+    </pre>
+    <img src="./cd.png" style="height: 800px; width: 100%;"/>
+
+    <h3>6. Go back to the previous directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/version_controller_repo
+    $ cd ..
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    </pre>
+    <img src="./cd ...png" style="height: 800px; width: 100%;"/>
+    <h2># CREATING AND REMOVING DIRECTORIES</h2>
+
+    <h3>7. Create a new directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ mkdir anas
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ ls
+    '3D Objects'/ AppData/ 'Application Data'@ Contacts/ Cookies@ Documents/ Downloads/
+    anas/
+    </pre>
+    <img src="./mkdir & rmdir.png" style="height: 800px; width: 100%;"/>
+    <h3>8. Remove an empty directory</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ rmdir anas/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~
+    $ ls
+    '3D Objects'/ AppData/ 'Application Data'@ Contacts/ Cookies@ Documents/ Downloads/
+    </pre>
+    <img src="./mkdir & rmdir.png" style="height: 800px; width: 100%;"/>
+
+    <h2># COPYING AND MOVING FILES</h2>
+
+    <h3>9. Copy a file to another location</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ cp hello.txt ahmed/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ ls
+    ahmed/ hello.txt
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ cd ahmed/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas/ahmed
+    $ ls
+    hello.txt
+    </pre>
+    <img src="./cp.png" style="height: 800px; width: 100%;"/>
+    <h3>10. Move a file to another location or rename it</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ mv yassin.html ahmed/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ ls
+    ahmed/ hello.txt
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ cd ahmed/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas/ahmed
+    $ ls
+    hello.txt  yassin.html
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ mv hello.txt name.txt
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ ls
+    name.txt
+    </pre>
+    <img src="./mv.png" style="height: 800px; width: 100%;"/>
+
+    <h2># DELETING FILES</h2>
+
+    <h3>11. Delete a file</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas/ahmed
+    $ ls
+    hello.txt  yassin.html
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas/ahmed
+    $ rm yassin.html
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas/ahmed
+    $ ls
+    hello.txt
+    </pre>
+    <img src="./rm.png" style="height: 800px; width: 100%;"/>
+
+    <h3>12. Delete a directory and its contents</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ rmdir ahmed/
+    rmdir: failed to remove 'ahmed/': Directory not empty
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ rm -r ahmed/
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ ls
+    hello.txt
+    </pre>
+    <img src="./rm -r.png" style="height: 800px; width: 100%;"/>
+
+    <h2># VIEWING FILE CONTENTS</h2>
+
+    <h3>13. Display the contents of a file</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ nano hello.txt
+
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ cat hello.txt
+    Hi Hello
+    djndnj
+    </pre>
+    <img src="./nano.png" style="height: 800px; width: 100%;"/>
+
+    <h3>14. Display the first few lines of a file</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ head name.txt
+    Hi Hello
+    djndnj
+    </pre>
+    <img src="./head.png" style="height: 800px; width: 100%;"/>
+
+    <h3>15. Display the last few lines of a file</h3>
+    <p><strong>Answer:</strong></p>
+    <pre>
+    anasa@DESKTOP-6B51AOQ MINGW64 ~/anas
+    $ tail name.txt
+    fkfkfk
+    </pre>
+    <img src="./tail.png" style="height: 800px; width: 100%;"/>
+
+</body>
+</html>
