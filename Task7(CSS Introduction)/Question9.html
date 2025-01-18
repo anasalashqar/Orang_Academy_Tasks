@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .red {
+        color: red;
+      }
+
+      #blue {
+        color: blue;
+      }
+
+      .colors {
+        background-color: rgb(212 240 241);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .even-and-odd {
+        background-color: rgb(245 219 253);
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .even-and-odd p:nth-child(odd) {
+        color: rgb(34 34 136);
+      }
+
+      .even-and-odd p:nth-child(even) {
+        color: rgb(204 55 29);
+      }
+
+      .header1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(108 133 92);
+        font-size: 2.5rem;
+      }
+
+      .header2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(100 216 236);
+      }
+
+      #boss {
+        color: rgb(148 185 52);
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header1">CSS Selectors</h1>
+
+    <h2 class="header2"><u>I'm a class selector</u></h2>
+
+    <h2 id="boss">I'm the ID selector. Here I am a boss</h2>
+
+    <div class="colors">
+      <p class="red">I'm red</p>
+      <p class="red">I'm also red</p>
+      <p id="blue">What is going on? why am i blue?!</p>
+    </div>
+
+    <div class="even-and-odd">
+      <p>I'm odd number</p>
+      <p>I'm even number</p>
+      <p>I'm also odd number</p>
+      <p>Hm..I'm even number</p>
+    </div>
+
+    ©
+    <a href="https://github.com/moshoubash/Solve_HTML_CSS_Task"
+      >Here is my GitHub page</a
+    ><br />
+    <a href="https://www.instagram.com/mo.shoubash"
+      >Yes, it looks like promotion.. but also let me put my instagram
+      page...:)</a
+    >
+  </body>
+</html>

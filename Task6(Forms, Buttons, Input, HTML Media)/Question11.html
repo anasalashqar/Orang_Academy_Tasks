@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* General styles for all elements */
+      * {
+        font-family: cursive;
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      /* Body styles */
+      body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #f3f3f3;
+        height: 100vh;
+        background-color: rgb(84 84 150); 
+      }
+
+      
+      h1 {
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      
+      p {
+        font-size: 1.2rem;
+      }
+
+            label {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      
+      button {
+        border: none; /* Remove default button border */
+      }
+
+      .container {
+        margin-top: 3.2rem; /* Space above the container */
+        max-width: 800px; /* Maximum width of the container */
+      }
+
+
+      .header {
+        margin-bottom: 2rem; /* Space below the header */
+        text-align: center; /* Center align header text */
+      }
+
+      /* Span styles */
+      span {
+        margin-left: 0.2rem; /* Space to the left of the span */
+        font-size: 0.9rem; /* Font size for span */
+        color: #e4e4e4; /* Color for span text */
+      }
+
+      /* Form styles */
+      form {
+        background: rgba(27, 27, 50, 0.8); /* Semi-transparent background */
+        padding: 2.5rem 1.2rem; /* Padding around the form */
+        border-radius: 5px; /* Rounded corners */
+      }
+
+
+      .form-group {
+        margin-bottom: 1.25rem; /* Space below each form group */
+        overflow: hidden; /* Clear floats */
+      }
+
+      /* Input field styles */
+      .form-control {
+        display: block;
+        width: 100%; /* Full width */
+        padding: 10px; /* Padding inside input */
+        color: #495057; /* Text color */
+        background-color: #fff; /* Background color of input */
+        border: 1px solid #ced4da; /* Border color */
+        border-radius: 0.25rem; /* Rounded corners */
+      }
+
+
+      .input-radio,
+      .input-checkbox {
+        margin-right: 0.625rem; /* Space to the right of inputs */
+        min-height: 1.25rem; /* Minimum height */
+        min-width: 1.25rem; /* Minimum width */
+      }
+
+      /* Textarea styles */
+      textarea {
+        min-height: 120px; /* Minimum height of textarea */
+        width: 100%; /* Full width */
+        padding: 0.625rem; /* Padding inside textarea */
+        resize: vertical; /* Allow vertical resizing only */
+        font-size: 20px; /* Font size */
+      }
+
+      /* Button styles */
+      button {
+        display: block; /* Block display */
+        width: 100%; /* Full width */
+        padding: 0.75rem; /* Padding inside button */
+        background: #37af65; /* Background color of button */
+        color: inherit; /* Inherit text color */
+        border-radius: 2px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+      }
+
+
+      input,
+      select {
+        font-size: 20px; /* Font size */
+        padding: 10px; /* Padding inside input/select */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Amman Coding Academy Survey Form</h1>
+        <!-- Main title of the form -->
+        <p>
+          <i>Thank you for taking the time to help</i>
+          <!-- Subtitle -->
+        </p>
+      </header>
+      <form>
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <!-- Label for name input -->
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+          />
+          <!-- Name input -->
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <!-- Label for email input -->
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+          />
+          <!-- Email input -->
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age (optional)</label>
+          <!-- Label for age input -->
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+          <!-- Age input -->
+        </div>
+
+        <div class="form-group">
+          <p>How did you like my survey</p>
+          <!-- Question about survey feedback -->
+          <select class="form-control">
+            <option selected="">How did you like my survey</option>
+            <!-- Default option -->
+            <option value="yes">I like it so much</option>
+            <!-- Feedback option -->
+            <option value="no">not so much</option>
+            <!-- Feedback option -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend my pen to a friend?</p>
+          <!-- Question about recommendation -->
+          <label>
+            <input
+              name="recommendation"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked=""
+            />Definitely
+            <!-- Radio option -->
+          </label>
+          <label>
+            <input
+              name="recommendation"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe
+            <!-- Radio option -->
+          </label>
+          <label>
+            <input
+              name="recommendation"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure
+            <!-- Radio option -->
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of codepen?</p>
+          <!-- Question about favorite feature -->
+
+          <select name="mostLike" class="form-control" required="">
+            <option selected>Select an option</option>
+            <!-- Default option -->
+            <option value="projects">Projects</option>
+            <!-- Feature option -->
+            <option value="openSource">Open Source</option>
+            <!-- Feature option -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved in my survey? (Check all that
+            apply)
+            <!-- Question about improvements -->
+          </p>
+
+          <label>
+            <input
+              name="CSS"
+              value="CSS"
+              type="checkbox"
+              class="input-checkbox"
+            />CSS needs to be more complex
+            <!-- Checkbox option -->
+          </label>
+          <label>
+            <input
+              name="javascript"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />Use some javascript
+            <!-- Checkbox option -->
+          </label>
+          <label>
+            <input
+              name="no-changes"
+              value="no-changes"
+              type="checkbox"
+              class="input-checkbox"
+            />NO changes required
+            <!-- Checkbox option -->
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <!-- Question for additional feedback -->
+          <textarea
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+          <!-- Textarea for comments -->
+        </div>
+
+        <div class="form-group">
+          <button type="submit">
+            <!-- Submit button -->
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

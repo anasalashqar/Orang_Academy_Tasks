@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form{
+            padding: 20px;
+            width: 400px;
+            border: 1px solid black;
+        }
+
+        input, textarea, select{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+
+        <br />
+
+        <label for="gender">Gender: </label>
+        
+        <input id="male" name="gender" type="radio" value="male"> 
+        <label for="male">Male</label>
+        
+        <input id="female" name="gender" type="radio" value="female" style="margin-bottom: 15px;"> 
+        <label for="female">Female</label>
+
+        <br />
+
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option value="Select an option" selected>Select an option</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Saudi Arabia">Saudi Arabia</option>
+        </select>
+
+        <br />
+        <label for="message" style="display: block;">Message: </label>
+        <textarea cols="30" rows="5" name="message" id="message"></textarea>
+
+        <br />
+
+        <input type="checkbox"> Subscribe?
+
+        <br />
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
