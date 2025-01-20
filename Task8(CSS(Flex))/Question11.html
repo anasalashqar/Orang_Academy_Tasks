@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        background-color: lightblue;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .number2 {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+      }
+      .number2 li {
+        list-style: none;
+        height: 90%;
+        width: 90%;
+        background-color: burlywood;
+      }
+      .number3 {
+        background-color: white;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: 1fr 1fr; /* Two rows for two list items */
+      }
+
+      .number4 {
+        background-color: white;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      }
+      .number3 li {
+        list-style: none;
+        height: 90%;
+        width: 100%;
+        background-color: burlywood;
+      }
+      .number4 li {
+        list-style: none;
+        height: 100%;
+        width: 90%;
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div class="number2">
+      <li>Slide1</li>
+      <li>Slide2</li>
+      <li>Slide3</li>
+      <li>Slide4</li>
+    </div>
+    <div class="number2">
+      <li>Slide5</li>
+      <li>Slide6</li>
+      <li>Slide7</li>
+      <li>Slide8</li>
+    </div>
+    <div>4</div>
+    <div>5</div>
+    <div class="number3">
+      <li>Slide1</li>
+      <li>Slide2</li>
+    </div>
+    <div class="number4">
+      <li>Slide1</li>
+      <li>Slide2</li>
+    </div>
+    <div>8</div>
+    <div class="number2">
+      <li>Slide1</li>
+      <li>Slide2</li>
+      <li>Slide3</li>
+      <li>Slide4</li>
+    </div>
+    <div>10</div>
+    <div>11</div>
+    <div class="number2">
+      <li>Slide1</li>
+      <li>Slide2</li>
+      <li>Slide3</li>
+      <li>Slide4</li>
+    </div>
+  </body>
+</html>

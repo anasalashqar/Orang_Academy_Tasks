@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Layout</title>
+    <style>
+      body
+       {
+        margin: 0;
+        ;
+        
+      }
+
+      .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%; /* Full width of the screen */
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 3; /* Makes this div take up 75% of the width */
+        background-color: lightblue;
+        height: 15vh;
+      }
+img{
+    border-radius: 24px;
+}
+      .right {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1; /* Makes this div take up 25% of the width */
+        background-color: lightgreen;
+        height: 15vh; /* Full height of the viewport */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">1 <img width="40" height="40" src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/d6c392a84e4f665424d710649452e7f9/Derivates/a6bdb196bee23faef1d8020319c7c64750ef7686.jpg"></div>
+      <div class="right">2 <img width="40" height="40" src="https://as2.ftcdn.net/v2/jpg/01/24/41/03/1000_F_124410367_M538eQuhp4ItuXE2RVt5m75kODW2nTZz.jpg" alt=""></div>
+    </div>
+  </body>
+</html>

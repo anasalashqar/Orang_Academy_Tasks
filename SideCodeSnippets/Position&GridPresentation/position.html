@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position: Fixed Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px; 
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        
+        .fixed-box{
+            position: fixed;
+
+            right: 600px;
+            bottom: 250px;
+            background-color: #4CAF50;
+            width: 150px;
+            height: 150px;
+
+
+        }
+        .content {
+            position: fixed;
+
+            z-index: -10;
+            background-color: blue;
+            text-align: center;
+            padding: 40px;
+        }
+        .explanation {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 700px;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .example-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 700px;
+        }
+        .footer {
+            position: fixed;
+
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding CSS Position: Fixed</h1>
+    <div class="fixed-box">Fixed box</div>
+</header>
+
+<div class="content">
+    <h2>What is "position: fixed"?</h2>
+    <p>The `position: fixed` property in CSS allows you to position an element relative to the browser window. The element remains in the same place even when the page is scrolled.</p>
+</div>
+
+<div class="explanation">
+    <h3>How it Works:</h3>
+    <p>When you use `position: fixed`, the element is positioned relative to the browser window, not its parent container or the document flow. Even if the page scrolls, the element stays fixed in place on the screen.</p>
+</div>
+
+<div class="example-container">
+    <h3>Example:</h3>
+    <p>The box below is positioned with `position: fixed`. It will stay at the bottom-right corner of the screen no matter how much you scroll.</p>
+    
+</div>
+
+<div class="footer">
+    <p>Made for learning purposes. Position: fixed example.</p>
+</div>
+
+</body>
+</html>
