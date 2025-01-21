@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(53, 53, 53);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        margin: 0;
+      }
+
+      nav,
+      footer {
+        display: flex;
+        justify-content: space-between;
+      }
+      .upper-nav {
+        display: flex;
+        justify-content: space-between;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      ul {
+        display: flex;
+        padding: 0 8px;
+      }
+
+      ul li {
+        margin: 0 5px;
+      }
+
+      .navigation a {
+        padding: 10px 20px;
+        border-radius: 15px;
+        background-color: rgb(226, 226, 226);
+      }
+
+      input {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 500px;
+        border-radius: 20px;
+        border: 1px solid rgb(199, 199, 199);
+      }
+
+      footer {
+        background-color: rgb(238 238 238);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .dots {
+        font-weight: 30px;
+        margin: 5px;
+        font-size: 24px;
+      }
+
+      .mobile {
+        display: none;
+      }
+      @media (max-width: 414px) {
+        .upper-nav {
+          display: none;
+        }
+        .mobile {
+          display: flex;
+          justify-content: space-between;
+        }
+        input {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="upper-nav">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#store">Store</a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="profile">Profile</a>
+        </li>
+        <li>
+          <a href="settings">Settings</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile">
+      <div class="dots">
+        <i class="fa-solid fa-bars dots"></i>
+      </div>
+      <div class="dots">
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </nav>
+    <main>
+      <img src="./pic.jpg" width="200" alt="web app logo" />
+      <input type="text" />
+      <div class="navigation">
+        <a href="#">Do the thing!</a>
+        <a href="#">Do the other thing!</a>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#advertising">Advertising</a>
+        </li>
+        <li>
+          <a href="#business">Business</a>
+        </li>
+
+        <li><p>Hint Click Ctrl+Shift+I</p></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="Privacy">Privacy</a>
+        </li>
+        <li>
+          <a href="Terms">Terms</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
