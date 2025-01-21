@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        margin: 0;
+      }
+      .one {
+        width: 100%;
+        background-color: lightskyblue;
+        height: 60px;
+      }
+      .two {
+        width: 100%;
+        background-color: palevioletred;
+        height: 60px;
+      }
+      .btn {
+        padding: 15px;
+        background-color: green;
+        color: white;
+      }
+      .three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+    <div class="three">
+      <h2>You have hit the spacebar <b>0</b> times</h2>
+      <button class="btn">RESTART</button>
+    </div>
+    <div class="two"></div>
+  </body>
+</html>

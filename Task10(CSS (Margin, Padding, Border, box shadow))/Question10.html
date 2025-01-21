@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solid Multi Box Shadow with White Gaps</title>
+    <style>
+      .multi-shadow-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        margin: 50px;
+        border-radius: 15px;
+        box-shadow: 5px -5px 0px white, 10px -10px 0px rgba(255, 0, 0, 1),
+          15px -15px 0px white, 20px -20px 0px rgba(0, 255, 0, 1),
+          25px -25px 0px white, 30px -30px 0px rgba(255, 255, 0, 1),
+          35px -35px 0px white, 40px -40px 0px rgba(0, 0, 255, 1),
+          45px -45px 0px white, 50px -50px 0px rgba(0, 255, 255, 1);
+      }
+      .s{
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="s"></div>
+    <div class="multi-shadow-box">Multi Shadow</div>
+  </body>
+</html>
