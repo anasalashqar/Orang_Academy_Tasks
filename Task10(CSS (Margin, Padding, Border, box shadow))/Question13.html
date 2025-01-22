@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0;
+        height: 1000px;
+      }
+      h2 {
+        text-align: center;
+      }
+      .upper {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      nav {
+        padding: 20px 0px;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: grey;
+        border: 2px solid black;
+        border-radius: 24px;
+        color: white;
+        gap: 16px;
+      }
+      .links {
+        display: flex;
+        gap: 16px;
+      }
+      section {
+        display: flex;
+        height: 40vh;
+        margin: 10px;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=contain%2Ch=675%2Cq=85%2Cw=1200/wp-content/uploads/junk-food-day1-scaled.jpg");
+        background-repeat: no-repeat;
+        border: 2px black solid;
+        border-radius: 0 0 0 24px;
+      }
+      .outer-pric {
+        display: flex;
+        gap: 140px;
+      }
+      .prices {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        height: 100px;
+        width: 150px;
+        border-radius: 24px;
+        background-image: url("https://www.alfaforni.com/wp-content/uploads/2018/08/pizza-come-in-pizzeria.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .spec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9);
+        height: 100px;
+        width: 150px;
+        border-radius: 24px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0GJAeoyh-f3vXxrx_A6CnZ79k9wWj-0jlQ&s");
+        background-repeat: no-repeat;
+      }
+      p {
+        text-align: center;
+        border: white 3px solid;
+        background-color: yellow;
+        border-radius: 24px;
+        width: 90px;
+        cursor: pointer;
+      }
+      .first {
+        align-self: center;
+        border: 2px black solid;
+        height: 200px;
+        width: 150px;
+        border-radius: 24px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0GJAeoyh-f3vXxrx_A6CnZ79k9wWj-0jlQ&s");
+        background-repeat: no-repeat;
+      }
+      .second {
+        height: 200px;
+        width: 150px;
+        border: 2px black solid;
+        border-radius: 24px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0GJAeoyh-f3vXxrx_A6CnZ79k9wWj-0jlQ&s");
+        background-repeat: no-repeat;
+      }
+      .third {
+        height: 200px;
+        width: 150px;
+        border-radius: 24px;
+        border: 2px black solid;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT0GJAeoyh-f3vXxrx_A6CnZ79k9wWj-0jlQ&s");
+        background-repeat: no-repeat;
+      }
+      .down {
+        width: 100%;
+        gap: 40px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+      .j{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        bottom: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="upper">
+      <h1>Online</h1>
+      <h4>FoodShop</h4>
+    </div>
+    <div
+      style="
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+      "
+    ></div>
+    <nav>
+      <div>
+        <img
+          width="50px"
+          src="https://img.freepik.com/premium-vector/online-food-logo-design_523404-883.jpg"
+          alt=""
+        />
+      </div>
+      <div class="links">
+        <span>Home</span>
+        <span>About</span>
+        <span>Menu</span>
+        <span>ContactUs</span>
+      </div>
+    </nav>
+    <section>
+      <h2>Welcome to Online Foodshop</h2>
+      <p>order none</p>
+      <div class="outer-pric">
+        <div class="prices">
+          <div><p>Prices</p></div>
+        </div>
+        <div class="spec">
+          <div><p>Specials</p></div>
+        </div>
+      </div>
+    </section>
+    <div style="height: 3px; background-color: black; margin-bottom: 5px"></div>
+    <h2>Fetures</h2>
+    <div class="down">
+      <div class="first"><p>Order NOW</p></div>
+      <div class="second"><p>Order NOW</p></div>
+      <div class="third"><p>Order NOW</p></div>
+    </div>
+    <div class="j">Copyright 2020-2021 Nothing. All Rights are reserved</div>
+  </body>
+</html>
