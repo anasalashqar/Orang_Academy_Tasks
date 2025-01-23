@@ -1,0 +1,372 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.first {
+  padding: 10px;
+  height: 100vh;
+  background-image: url("./Jeep-car.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.first h1 {
+  color: white;
+  font-optical-sizing: auto;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.first main {
+  color: white;
+  font-optical-sizing: auto;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.upper-nav {
+  margin-top: 50px; 
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 700;
+  position: fixed;
+  top: 0;                      
+  left: 0;                       
+  right: 0;                       
+  z-index: 1000;                 
+  background-color: transparent;  
+  padding: 10px 0;               
+}
+
+.upper-nav.sticky {
+  position: fixed;
+  top: -50px;
+  padding: 10px 0;
+  background: #92d5dc;
+  z-index: 10000;
+}
+
+.lower-nav {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 99%;
+  align-items: center;
+}
+.lower-nav__p {
+  color: white;
+  font-size: 60px;
+}
+.lower-nav__div {
+}
+.lower-nav__div > i {
+  margin: 0 4px;
+  padding: 3px 6px;
+  font-size: 42px;
+  color: white;
+  border-radius: 24px;
+  border: solid white 3px;
+}
+
+.lower-nav__div > i:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  list-style: none;
+  color: white;
+  background-color: transparent;
+}
+
+.nav-links > a {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px 14px;
+}
+
+.nav-links > a:hover,
+a.active {
+  cursor: pointer;
+  background-color: pink;
+  border-radius: 24px;
+  color: black;
+}
+
+/* .enquiry {
+  border-radius: 24px;
+  color: black;
+  background-co lor: #fec0cc;
+} */
+
+.about-section {
+  height: 100vh;
+    
+}
+.about-section__first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.about-section__first > h2 {
+  font-size: 48px;
+}
+
+.about-section__first > p {
+  width: 50%;
+  font-size: 16px;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.about-section__line {
+  height: 2px;
+  width: 200px;
+  background-color: black;
+  margin: 0px auto;
+  margin-top: 25px;
+}
+
+.about-section__second {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section__second > h4 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 25px;
+}
+
+.about-section__second > p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.about-section__second-div {
+  margin-top: 50px;
+  padding: 10px 40px;
+  border-radius: 24px;
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section__second-div:hover {
+  background-color: white;
+  border: pink solid 2px;
+  cursor: pointer;
+}
+
+.about-section__second-div p:nth-child(2) {
+  font-size: 14px;
+}
+
+.flex-section-div {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+  gap: 72px;
+}
+
+.flex-section-div div {
+  width: 250px;
+  height: 300px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flex-section-div div:nth-child(1) {
+  background-image: url("https://wallpapersmug.com/download/320x480/e6db81/Jeep-Wrangler-cars-landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-section-div div:nth-child(2) {
+  background-image: url("https://media.istockphoto.com/id/1398157143/photo/jeep-cherokee-srt.jpg?s=612x612&w=0&k=20&c=z0t55AgwiwR6JvsIQ-kTrbWoDh4zZrXso_AUYsmX8IA=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-section-div div:nth-child(3) {
+  background-image: url("https://w0.peakpx.com/wallpaper/929/353/HD-wallpaper-wrangler-on-dirt-road-black-black-and-white-jeep-nature-vertical-white.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0;
+  grid-column: span 3;
+  box-shadow: none;
+}
+video {
+  width: 900px;
+}
+
+.flex-section-div div:nth-child(5) {
+  background-image: url("https://wallpapersmug.com/download/320x480/e6db81/Jeep-Wrangler-cars-landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-section-div div:nth-child(6) {
+  background-image: url("https://media.istockphoto.com/id/1398157143/photo/jeep-cherokee-srt.jpg?s=612x612&w=0&k=20&c=z0t55AgwiwR6JvsIQ-kTrbWoDh4zZrXso_AUYsmX8IA=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-section-div div:nth-child(7) {
+  background-image: url("https://www.motortrend.com/uploads/sites/11/2011/03/2011-jeep-wrangler-unlimited-sahara-4x4-front-vertical.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specs-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  height: 600px;
+}
+
+.specs-section__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.specs-section__top h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.specs-section__top p {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: auto;
+}
+.grid-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.left-column {
+  background-color: black;
+}
+.right-column:nth-child(1) {
+  background-color: grey;
+}
+.right-column:nth-child(3) {
+  background-color: grey;
+}
+.right-column:nth-child(5) {
+  background-color: grey;
+}
+
+.right-column:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
+.enquiry-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  width: 100%;
+  height: 700px;
+}
+
+.enquiry-section__first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enquiry-section__first h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.enquiry-section__first p {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.enquiry-section__inputs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.enquiry-section__inputs input {
+  font-size: 16px;
+  padding: 10px 5px;
+  width: 200px;
+}
+
+.enquiry-section__textarea textarea {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.enquiry-section__btn {
+  margin-top: 20px;
+  border-radius: 24px;
+  background-color: pink;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.enquiry-section__btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid pink;
+}

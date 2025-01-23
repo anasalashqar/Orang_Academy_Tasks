@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./FULL.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="first" id="Home">
+      <main class="upper-nav">
+        <h1>PRODAC</h1>
+        <div class="nav-links">
+          <a href="#Home" class="active">Home</a>
+          <a href="#About">Car Price</a>
+          <a href="#Photo">Photo Gallery</a>
+          <a href="#Specs">Specs</a>
+          <a href="#Enquiry" class="enquiry">enquiry</a>
+        </div>
+      </main>
+      <nav class="lower-nav">
+        <p class="lower-nav__p">Show And Sell Cars <br />With Prodac.</p>
+        <div class="lower-nav__div">
+          <i class="fa-solid fa-arrow-left"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </nav>
+    </section>
+    <section id="About" class="about-section">
+      
+      <div class="about-section__first">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+          delectus ab, veritatis dolor non quas in. Magnam ut voluptatum, nisi
+          minima tenetur corporis nam cum vero! Explicabo voluptatibus aliquam
+          id?
+        </p>
+      </div>
+      <div class="about-section__line"></div>
+      <div class="about-section__second">
+        <h4>Pricing Starts From: $15000*</h4>
+        <p>(Prices might differ based on locations)</p>
+        <div class="about-section__second-div">
+          <p>Book Now</p>
+          <p>(Pay 50% Only)</p>
+        </div>
+      </div>
+    </section>
+    <div style="height: 100px; width: 100%"></div>
+    <section id="Photo" class="flex-section">
+      <div class="flex-section-div">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="vid">
+        <video muted loop autoplay>
+          <source src="./Jeep.mp4" />
+        </video>
+      </div>
+      <div class="flex-section-div">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <div style="height: 100px; width: 100%"></div>
+    <section id="Specs" class="specs-section">
+      <div class="specs-section__top">
+        <h2>Specs</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam id
+          obcaecati aliquid vitae!
+        </p>
+      </div>
+      <div>
+        <div class="grid-container">
+          <div class="grid-item left-column">Left 1</div>
+          <div class="grid-item right-column">Right 1</div>
+
+          <div class="grid-item left-column">Left 2</div>
+          <div class="grid-item right-column">Right 2</div>
+
+          <div class="grid-item left-column">Left 3</div>
+          <div class="grid-item right-column">Right 3</div>
+
+          <div class="grid-item left-column">Left 4</div>
+          <div class="grid-item right-column">Right 4</div>
+
+          <div class="grid-item left-column">Left 5</div>
+          <div class="grid-item right-column">Right 5</div>
+        </div>
+      </div>
+    </section>
+    <section id="Enquiry" class="enquiry-section">
+      <div class="enquiry-section__first">
+        <h2>Send an Enquiry</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+          consequatur est exercitationem totam iure ab asperiores?
+        </p>
+      </div>
+      <div class="enquiry-section__inputs">
+        <input type="text" required placeholder="Name*" />
+        <input type="email" required placeholder="E-mail*" />
+        <input type="tel" required placeholder="Phone*" />
+        <input type="text" required placeholder="City*" />
+      </div>
+      <div class="enquiry-section__textarea">
+        <textarea
+          name="Hi"
+          cols="92"
+          rows="10"
+          placeholder="Describe..."
+        ></textarea>
+      </div>
+      <div class="enquiry-section__btn">
+        <h2>Submit <i class="fa-solid fa-arrow-right"></i></h2>
+      </div>
+    </section>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("main");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+
+      let sections = document.querySelectorAll("section");
+      let navLinks = document.querySelectorAll(".nav-links a");
+
+      window.onscroll = () => {
+        let top = window.scrollY;
+
+        sections.forEach((sec) => {
+          let offset = sec.offsetTop;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute("id");
+
+          if (top >= offset && top < offset + height) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === "#" + id) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
