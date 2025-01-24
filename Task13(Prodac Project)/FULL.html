@@ -28,6 +28,14 @@
           <a href="#Enquiry" class="enquiry">enquiry</a>
         </div>
       </main>
+      <main class="upper-nav_mobile">
+        <div class="dots">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dots">
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </main>
       <nav class="lower-nav">
         <p class="lower-nav__p">Show And Sell Cars <br />With Prodac.</p>
         <div class="lower-nav__div">
@@ -37,7 +45,6 @@
       </nav>
     </section>
     <section id="About" class="about-section">
-      
       <div class="about-section__first">
         <h2>About</h2>
         <p>
@@ -57,6 +64,7 @@
         </div>
       </div>
     </section>
+
     <div style="height: 100px; width: 100%"></div>
     <section id="Photo" class="flex-section">
       <div class="flex-section-div">
@@ -131,8 +139,12 @@
     </section>
     <script>
       window.addEventListener("scroll", function () {
-        var header = document.querySelector("main");
-        header.classList.toggle("sticky", window.scrollY > 0);
+        var upperAnv = document.querySelector(".upper-nav");
+    var upperAnyMobile = document.querySelector(".upper-nav_mobile");
+    
+    // Apply 'sticky' class based on scroll position for both elements
+    upperAnv.classList.toggle("sticky", window.scrollY > 0);
+    upperAnyMobile.classList.toggle("sticky", window.scrollY > 0);
       });
 
       let sections = document.querySelectorAll("section");
@@ -143,7 +155,7 @@
 
         sections.forEach((sec) => {
           let offset = sec.offsetTop;
-          sec.offsetTop
+          sec.offsetTop;
           let height = sec.offsetHeight;
           let id = sec.getAttribute("id");
 
