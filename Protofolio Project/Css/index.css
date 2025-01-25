@@ -596,6 +596,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 5px;
+    padding: 0;
+    width: 97%;
   }
   .section-skills__first > div {
     background-color: white;
@@ -651,6 +653,10 @@ footer {
   .services {
     height: 1100px;
   }
+  .services-list > div > img{
+    width: 320px;
+    height: 320px;
+  }
   .workexp {
     flex-direction: column-reverse;
   }
@@ -663,12 +669,14 @@ footer {
   }
   .container {
     padding: 0px;
-    width: 400px;
+    width: 350px;
   }
   .timeline::before {
     left: 50%;
   }
-
+  .enquiry-section {
+    height: 900px;
+  }
   .logo2 {
     display: none;
     justify-content: center;
