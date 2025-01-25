@@ -31,6 +31,9 @@ a {
 h2 {
   font-size: 36px;
 }
+.section__card > h5 {
+  color: white;
+}
 section {
   height: 100vh;
   display: flex;
@@ -435,7 +438,9 @@ header {
   font-size: 16px;
   margin-bottom: 50px;
 }
-
+.section__card > h5{
+  color: white;
+}
 .enquiry-section__inputs {
   display: flex;
   flex-direction: row;
@@ -645,7 +650,6 @@ footer {
     width: 320px;
     font-size: 22px;
     padding: 0;
-    
   }
   .services {
     height: 1100px;
