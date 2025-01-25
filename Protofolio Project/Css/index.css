@@ -633,27 +633,24 @@ footer {
   .right {
     left: 0;
   }
-  .enquiry-section__inputs {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    width: 98%;
-  }
+
   .enquiry-section__inputs input {
     width: 310px;
   }
   .enquiry-section__textarea {
     columns: 2;
-    width: 300px;
+    width: 320px;
   }
   .enquiry-section__textarea textarea {
-    width: 300px;
+    width: 320px;
     font-size: 22px;
+    padding: 0;
+    
   }
   .services {
     height: 1100px;
   }
-  .services-list > div > img{
+  .services-list > div > img {
     width: 320px;
     height: 320px;
   }
@@ -662,7 +659,7 @@ footer {
   }
   .timeline {
     flex-direction: column;
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -724,5 +721,12 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .enquiry-section__inputs {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px !important;
+    width: 100%;
   }
 }
